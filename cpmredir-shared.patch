@@ -1,0 +1,23 @@
+--- cpmredir-1.1.1/lib/Makefile.am.orig	2001-07-07 14:49:16.000000000 +0200
++++ cpmredir-1.1.1/lib/Makefile.am	2003-08-16 16:42:13.584423648 +0200
+@@ -2,7 +2,7 @@
+ 
+ INCLUDES=-I$(top_srcdir)/include
+ 
+-lib_LIBRARIES=libcpmredir.a
+-libcpmredir_a_SOURCES = cpmdrv.c   cpmint.h	  cpmredir.c  util.c \
++lib_LTLIBRARIES=libcpmredir.la
++libcpmredir_la_SOURCES = cpmdrv.c   cpmint.h	  cpmredir.c  util.c \
+ 		   cpmglob.c  cpmparse.c  drdos.c     xlt.c
+ 
+--- cpmredir-1.1.1/configure.in.orig	2003-03-28 21:09:14.000000000 +0100
++++ cpmredir-1.1.1/configure.in	2003-08-16 16:41:51.891721440 +0200
+@@ -8,7 +8,7 @@
+ 
+ dnl Checks for programs.
+ AC_PROG_CC
+-AC_PROG_RANLIB
++AC_PROG_LIBTOOL
+ 
+ dnl Checks for libraries.
+ 
