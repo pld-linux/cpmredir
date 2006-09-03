@@ -27,7 +27,7 @@ emulowanego komputera CP/M w ¶rodowisku uniksowym lub pod Windows
 Summary:	Header files for cpmredir library
 Summary(pl):	Pliki nag³ówkowe biblioteki cpmredir
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	readline-devel
 
 %description devel
@@ -40,7 +40,7 @@ Pliki nag³ówkowe biblioteki cpmredir.
 Summary:	Static cpmredir library
 Summary(pl):	Statyczna biblioteka cpmredir
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static cpmredir library.
