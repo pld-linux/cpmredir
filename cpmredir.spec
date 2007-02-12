@@ -1,5 +1,5 @@
 Summary:	CPMREDIR - filesystem functions of an emulated CP/M computer
-Summary(pl.UTF-8):   CPMREDIR - funkcje obsługi systemu plików emulowanego komputera CP/M
+Summary(pl.UTF-8):	CPMREDIR - funkcje obsługi systemu plików emulowanego komputera CP/M
 Name:		cpmredir
 Version:	1.1.1
 Release:	1
@@ -25,7 +25,7 @@ emulowanego komputera CP/M w środowisku uniksowym lub pod Windows
 
 %package devel
 Summary:	Header files for cpmredir library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki cpmredir
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki cpmredir
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	readline-devel
@@ -38,7 +38,7 @@ Pliki nagłówkowe biblioteki cpmredir.
 
 %package static
 Summary:	Static cpmredir library
-Summary(pl.UTF-8):   Statyczna biblioteka cpmredir
+Summary(pl.UTF-8):	Statyczna biblioteka cpmredir
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
