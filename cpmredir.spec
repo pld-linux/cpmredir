@@ -1,5 +1,5 @@
 Summary:	CPMREDIR - filesystem functions of an emulated CP/M computer
-Summary(pl):	CPMREDIR - funkcje obs≥ugi systemu plikÛw emulowanego komputera CP/M
+Summary(pl.UTF-8):   CPMREDIR - funkcje obs≈Çugi systemu plik√≥w emulowanego komputera CP/M
 Name:		cpmredir
 Version:	1.1.1
 Release:	1
@@ -18,14 +18,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 CPMREDIR is a library intended to support the filesystem functions of
 an emulated CP/M computer, in a Unix or Windows (mingw32) environment.
 
-%description -l pl
-CPMREDIR to biblioteka maj±ca obs≥ugiwaÊ funkcje systemu plikÛw
-emulowanego komputera CP/M w ∂rodowisku uniksowym lub pod Windows
+%description -l pl.UTF-8
+CPMREDIR to biblioteka majƒÖca obs≈Çugiwaƒá funkcje systemu plik√≥w
+emulowanego komputera CP/M w ≈õrodowisku uniksowym lub pod Windows
 (mingw32).
 
 %package devel
 Summary:	Header files for cpmredir library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki cpmredir
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki cpmredir
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	readline-devel
@@ -33,19 +33,19 @@ Requires:	readline-devel
 %description devel
 Header files for cpmredir library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki cpmredir.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki cpmredir.
 
 %package static
 Summary:	Static cpmredir library
-Summary(pl):	Statyczna biblioteka cpmredir
+Summary(pl.UTF-8):   Statyczna biblioteka cpmredir
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static cpmredir library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka cpmredir.
 
 %prep
