@@ -2,13 +2,13 @@ Summary:	CPMREDIR - filesystem functions of an emulated CP/M computer
 Summary(pl.UTF-8):	CPMREDIR - funkcje obsługi systemu plików emulowanego komputera CP/M
 Name:		cpmredir
 Version:	1.1.1
-Release:	1
-License:	LGPL
+Release:	2
+License:	LGPL v2+
 Group:		Libraries
-Source0:	http://www.seasip.demon.co.uk/Unix/Zxcc/%{name}-%{version}.tar.gz
+Source0:	http://www.seasip.info/Unix/Zxcc/%{name}-%{version}.tar.gz
 # Source0-md5:	2e7c91fd169e4e9efb926ef44bd610a7
 Patch0:		%{name}-shared.patch
-URL:		http://www.seasip.demon.co.uk/Unix/Zxcc/
+URL:		http://www.seasip.info/Unix/Zxcc/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -28,7 +28,6 @@ Summary:	Header files for cpmredir library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki cpmredir
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	readline-devel
 
 %description devel
 Header files for cpmredir library.
@@ -77,14 +76,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc doc/README
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/libcpmredir.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libcpmredir.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/*.h
+%attr(755,root,root) %{_libdir}/libcpmredir.so
+%{_libdir}/libcpmredir.la
+%{_includedir}/cpmredir.h
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libcpmredir.a
